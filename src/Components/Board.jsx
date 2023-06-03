@@ -51,7 +51,7 @@ return (
   <div className="board-container  shadow " style={{ borderRadius: '40px', background: "white", maxWidth:'500px', height:'auto', margin:'auto', marginTop:'150px', padding:'50px' }}>
     {isWinner ? (
     <div className="board-container  " style={{display: "flex", justifyContent: "center", alignItems:'center', flexDirection:"column"}}>
-    <h2 className="text-success"> { isWinner } Won The Game </h2>
+    <h2 className="text-success">Congratulations !! { isWinner } Won The Game </h2>
     <button style={{borderRadius:"0"}} class="btn btn-outline-info btn-lg" onClick={handleReset}>Play Again </button>
     </div>
     ) : (
