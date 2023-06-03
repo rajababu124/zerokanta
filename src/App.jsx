@@ -15,7 +15,7 @@ function App() {
   <Navbar />
   <Routes>
     <Route path='/' element={<Home />} />
-    <Route path='/Playagain' element={<Playagain />} />
+    <Route path='/playagain' element={<Playagain />} />
   </Routes>
   </BrowserRouter>
     </>
