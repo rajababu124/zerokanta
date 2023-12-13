@@ -48,16 +48,16 @@ setState(Array(9).fill(null));
 
 return (
 <>
-  <div className="board-container  shadow " style={{ borderRadius: '40px', background: "white", maxWidth:'500px', height:'auto', margin:'auto', marginTop:'150px', padding:'50px' }}>
+  <div className="board-container  shadow " style={{ borderRadius: '10px', background: "white", maxWidth:'300px', height:'auto', margin:'auto', marginTop:'50px', padding:'50px' }}>
     {isWinner ? (
     <div className="board-container  " style={{display: "flex", justifyContent: "center", alignItems:'center', flexDirection:"column"}}>
-    <h2 className="text-success">Congratulations !! { isWinner } Won The Game </h2>
+    <h2 className="text-success">Congratulations !! {  isWinner } Won The Match </h2>
     <button style={{borderRadius:"0"}} class="btn btn-outline-info btn-lg" onClick={handleReset}>Play Again </button>
     </div>
     ) : (
     <>
       <div>
-        <h2 className="text-info"> Player { isXTurn ? 'X' : "O"} Please Move </h2>
+        <h3 className="text-info">  { isXTurn ? 'X' : "O"} Move </h3>
       </div>
       <div className="board-row">
         <Square onClick={ ()=> handleClick(0)} value={state[0]} />
@@ -82,5 +82,4 @@ return (
 )
 }
 
-// export { handleReset }; 
 export default Board
